@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Sprint Game</title>
+    <title>Math Game</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -63,7 +63,7 @@
         </div>
         <!-- Countdown Page -->
         <div class="card" id="countdown-page" hidden>
-            <h1 class="countdown">3</h1>
+            <h1 class="countdown"></h1>
         </div>
 
         <!-- Game Page  -->
@@ -76,8 +76,8 @@
             </div>
             <!-- Right/Wrong Button -->
             <div class="item-footer">
-                <button class="wrong">Wrong</button>
-                <button class="right">Right</button>
+                <button class="wrong" onclick="select(false)">Wrong</button>
+                <button class="right" onclick="select(true)">Right</button>
             </div>
         </div>
 
@@ -99,6 +99,7 @@
     </div>
     
     <!-- Script -->
+    <script src="shuffle.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
